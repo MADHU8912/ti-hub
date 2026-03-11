@@ -16,16 +16,16 @@ jobs:
       - name: Build Project
         run: echo "Project Build Successful"
 
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Deploy Project
-        run: echo "Project Deployed Successfully"
-
   report-build-status:
     needs: deploy
     runs-on: ubuntu-latest
     steps:
       - name: Report Status
         run: echo "Build and Deployment Completed"
+
+          deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy Project
+        run: echo "Project Deployed Successfully"
