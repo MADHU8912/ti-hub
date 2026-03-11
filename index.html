@@ -1,12 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>TI Hub</title>
+<title>TI Hub Test</title>
 </head>
 <body>
 
-<h1>Welcome to TI Hub 🚀</h1>
-<p>Build and Deploy using CMD + GitHub + GitHub Actions</p>
+<h1>TI Hub CI/CD Testing 🚀</h1>
+
+<p>If you see this page, build and deploy is working.</p>
+
+<button onclick="test()">Run Test</button>
+
+<p id="result"></p>
+
+<script>
+function test(){
+document.getElementById("result").innerHTML = "Test Successful ✅";
+}
+</script>
 
 </body>
 </html>
